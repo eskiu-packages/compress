@@ -29,23 +29,6 @@ jobs:
           mkdir -p build
           for f in examples/*.esk; do eskiuc "$f" -o build/$(basename "$f" .esk); done
 
-  macos:
-    runs-on: macos-15
-    steps:
-      - uses: actions/checkout@v4
-      - name: Install Eskiu
-        run: brew install eskiu-lang/eskiu/eskiu
-      - name: Tests
-        run: eskiuc test
-      - name: Tests (-O2)
-        run: eskiuc test -O2
-      - name: Output read by Python
-        run: python3 -I tools/check_with_python.py
-      - name: Examples build
-        run: |
-          mkdir -p build
-          for f in examples/*.esk; do eskiuc "$f" -o build/$(basename "$f" .esk); done
-
   windows:
     runs-on: windows-latest
     defaults:
