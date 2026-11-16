@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/eskiu-lang/compress/actions/workflows/ci.yml"><img src="https://github.com/eskiu-lang/compress/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/eskiu-packages/compress/actions/workflows/ci.yml"><img src="https://github.com/eskiu-packages/compress/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/version-0.1.0-6448d4" alt="Version 0.1.0">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT"></a>
 </p>
@@ -84,7 +84,7 @@ ignores zero bytes after the last one. Each member's CRC-32 and size are checked
 In an Eskiu package (Eskiu 0.12 or newer):
 
 ```bash
-eskiuc add compress --git https://github.com/eskiu-lang/compress --rev v0.1.0
+eskiuc add compress --git https://github.com/eskiu-packages/compress --rev v0.1.0
 ```
 
 Then `import <compress>;`, or only the module you need.
